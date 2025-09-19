@@ -1,0 +1,6 @@
+.idea/
+*.pem
+Modelfile
+model/
+staging/
+decrypted/

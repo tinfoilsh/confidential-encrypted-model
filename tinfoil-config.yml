@@ -1,0 +1,14 @@
+shim-version: v0.2.4@sha256:0e7dfa388c192553268e2e662a37499815aed8e92ebdcfdbcaa2c6e4f5dab5f3
+cvm-version: 0.5.6
+cpus: 16
+memory: 16384
+
+shim:
+  listen-port: 443
+  upstream-port: 8080
+  publish-attestation: false
+  tls-challenge: dns
+
+containers:
+  - name: "manager"
+    image: "ghcr.io/tinfoilsh/confidential-encrypted-model:0.0.1"
